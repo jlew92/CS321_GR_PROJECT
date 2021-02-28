@@ -12,7 +12,7 @@ public class AddDialog extends JDialog implements ActionListener {
  private JTextField priceTF;
  private JLabel priceLabel;
  private JButton oKB;
-
+//aa
     public  AddDialog(){
         setTitle("Add Item");
 
