@@ -6,7 +6,7 @@ import java.util.ListIterator;
 
 public class IngredientDictionary {
 
-    LinkedList<IngredientItem> ingredientItemLinkedList;
+    LinkedList<IngredientItem> ingredientItemLinkedList = new LinkedList<IngredientItem>();
 
     /**
      * Constructor to Create a Clone of the Ingredient Item Linked List

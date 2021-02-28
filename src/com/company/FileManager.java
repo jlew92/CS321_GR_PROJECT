@@ -6,7 +6,7 @@ import java.util.*;
 
 public class FileManager extends Reader {
 
-    private ArrayList<String> stringArrayList;
+    private ArrayList<String> stringArrayList = new ArrayList<String>();
     private ArrayList<ArrayList<String>> objectArrayList;
     private FileReader reader;
     private FileWriter writer;
