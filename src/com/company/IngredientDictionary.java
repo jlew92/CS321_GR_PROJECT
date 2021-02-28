@@ -6,19 +6,18 @@ import java.util.ListIterator;
 
 public class IngredientDictionary {
 
-    LinkedList<IngredientItem> ingredientItemLinkedList = new LinkedList<IngredientItem>();
+    LinkedList<IngredientItem> ingredientItemLinkedList;
 
     /**
      * Constructor to Create a Clone of the Ingredient Item Linked List
      * @param ingredientItemLinkedList  The Ingredient Item Linked List to be Cloned
      */
     public IngredientDictionary(LinkedList<IngredientItem> ingredientItemLinkedList) {
+        this.ingredientItemLinkedList = new LinkedList<>();
         for(int i = 0; i < ingredientItemLinkedList.size(); i++){
-            try {
-                this.ingredientItemLinkedList.add(ingredientItemLinkedList.get(i).clone());
-            } catch (CloneNotSupportedException e) {
-                e.printStackTrace();
-            }
+
+            this.ingredientItemLinkedList.add(ingredientItemLinkedList.get(i));
+
         }
     }
 

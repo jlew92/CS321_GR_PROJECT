@@ -6,7 +6,7 @@ import java.util.*;
 
 public class FileManager extends Reader {
 
-    private ArrayList<String> stringArrayList = new ArrayList<String>();
+    private ArrayList<String> stringArrayList;
     private ArrayList<ArrayList<String>> objectArrayList;
     private FileReader reader;
     private FileWriter writer;
@@ -203,6 +203,8 @@ public class FileManager extends Reader {
 
     //GETTERS, SETTERS, AND CONSTRUCTORS BELOW
     public FileManager() {
+        this.stringArrayList = new ArrayList<>();
+        this.objectArrayList = new ArrayList<>();
     }
 
     /**
